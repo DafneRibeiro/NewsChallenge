@@ -1,3 +1,57 @@
+# News Summary Challenge
+
+### Task
+
+You'll test-drive a single page application in React that send requests to the Guardian API to get Headline and Article data and to the Aylien API to summarise text. 
+
+### Serving your app
+
+You'll use React's toolchain to take care of serving your HTML, CSS and JavaScript files.  
+
+## User Stories
+
+Some of these stories will need decomposing if they seem too large.
+
+### Standard
+```
+As a busy politician
+So I know what the big stories of the day are
+I can see all of today's headlines in one place
+```
+
+```
+As a busy politician
+So that I have something nice to look at
+I can see a relevant picture to illustrate each news article when I browse headlines
+```
+
+### Extended
+
+```
+As a busy politician
+So that I can get an in depth understanding of a very important story
+I can click a news headline to see a summary and a photo of the news article
+```
+
+```
+As a busy politician
+So I can get a few more details about an important story
+I can see click a news article summary title which links to the original article
+```
+
+```
+As a busy politician
+Just in case my laptop breaks
+I can read the site comfortably on my phone
+```
+
+```
+As a busy politician
+To make my news reading more fun
+I can see whizzy animations in the app
+```
+
+
 For my challenge I started identifing the hierarchy 
 
 my components:
@@ -54,80 +108,15 @@ I will go back to check the tests and try to learn how to make them work.
 
 
 
-# News Summary Challenge
-
-### Task
-
-You'll test-drive a single page application in React that send requests to the Guardian API to get Headline and Article data and to the Aylien API to summarise text. 
-
-### Serving your app
-
-You'll use React's toolchain to take care of serving your HTML, CSS and JavaScript files.  
-
-## User Stories
-
-Some of these stories will need decomposing if they seem too large.
-
-### Standard
-```
-As a busy politician
-So I know what the big stories of the day are
-I can see all of today's headlines in one place
-```
-
-```
-As a busy politician
-So that I have something nice to look at
-I can see a relevant picture to illustrate each news article when I browse headlines
-```
-
-### Extended
-
-```
-As a busy politician
-So that I can get an in depth understanding of a very important story
-I can click a news headline to see a summary and a photo of the news article
-```
-
-```
-As a busy politician
-So I can get a few more details about an important story
-I can see click a news article summary title which links to the original article
-```
-
-```
-As a busy politician
-Just in case my laptop breaks
-I can read the site comfortably on my phone
-```
-
-```
-As a busy politician
-To make my news reading more fun
-I can see whizzy animations in the app
-```
-
-## Mockups
-
-### Headlines page
-
-![Headlines page mockup](/images/news-summary-project-headlines-page-mockup.png)
-
-### Article summary page
-
-![Article page mockup](/images/news-summary-project-article-page-mockup.png)
-
 ## API
 
 ### API request rate limits and stubbing
 
 The Guardian and Aylien text summarisation APIs are severely rate-limited.
 
-**Please stub your tests so you don't exceed the daily limit.  Otherwise, all requests will be rejected and your app will stop working!**
 
 ### Guardian API example
 
-**Please stub your tests to avoid exceeding the API rate limit**
 
 If you wanted to get the content of an article from the Guardian API, this is the cURL request you might make.  Notice how it has a query parameter for `api-key`.
 
@@ -150,8 +139,6 @@ You will need to replace `INSERT_YOUR_KEY_HERE` with your own Guardian API key. 
 
 ### Aylien text summarisation API example
 
-**Please stub your tests to avoid exceeding the API rate limit**
-
 If you wanted to use the Aylien API to summarise an article by Bret Victor, this is the cURL request you might make.  Notice how it has headers to authenticate with the Aylien API.
 
 ```
@@ -169,11 +156,9 @@ curl "https://api.aylien.com/api/v1/summarize?url=http://worrydream.com/MediaFor
 
 ---
 
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+###Initial Setup
+-----
 
 In the project directory, you can run:
 
@@ -198,7 +183,11 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Build With:
+-----
+* ReactJs
+* Axios
+* The Guardian API
 
 
 
